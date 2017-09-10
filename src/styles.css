@@ -1,0 +1,17 @@
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+div#logos {
+  height: 150px;
+}
+
+.main-wrapper {
+  margin: 0px;
+}
+
+.main {
+  width: 1200px;
+  background-color: #fff;
+}
