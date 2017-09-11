@@ -3,15 +3,17 @@
 </div>
 <header>
   <div class="header-nav">
-    <a class="nav-link nav-text">Úvod</a>
-    <a class="nav-link nav-text">O SMTA</a>
-    <a class="nav-link nav-text">Liga</a>
-    <a class="nav-link nav-text">Kluby</a>
-    <a class="nav-link nav-text">Dokumenty</a>
-    <a class="nav-link nav-text">Kontakt</a>
+    <a routerLink="/" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">Úvod</a>
+    <a routerLink="/o-smta" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">O SMTA</a>
+    <a routerLink="/liga" class="nav-link nav-text">Liga</a>
+    <a routerLink="/kluby" class="nav-link nav-text">Kluby</a>
+    <a routerLink="/dokumenty" class="nav-link nav-text">Dokumenty</a>
+    <a routerLink="/kontakty" class="nav-link nav-text">Kontakt</a>
   </div>
 </header>
-
+<div id="content">
+  <router-outlet></router-outlet>
+</div>
 <footer>
 
 </footer>

@@ -6,11 +6,20 @@ import { LeagueComponent } from './league/league.component';
 import { ClubsComponent } from './clubs/clubs.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { PagesRoutingModule } from './pages-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    PagesRoutingModule
   ],
-  declarations: [HomeComponent, AboutComponent, LeagueComponent, ClubsComponent, DocumentsComponent, ContactsComponent]
+  declarations: [
+    HomeComponent,
+    AboutComponent,
+    LeagueComponent,
+    ClubsComponent,
+    DocumentsComponent,
+    ContactsComponent
+  ]
 })
 export class PagesModule { }

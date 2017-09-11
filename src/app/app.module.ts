@@ -4,7 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ClarityModule } from 'clarity-angular';
 import {PagesModule} from './pages/pages.module';
+import {Routes} from '@angular/router';
+import {RouterModule} from '@angular/router';
 
+const appRoutes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full'
+  }
+];
 
 @NgModule({
   declarations: [
@@ -12,8 +18,12 @@ import {PagesModule} from './pages/pages.module';
   ],
   imports: [
     BrowserModule,
-    ClarityModule.forRoot(),
-    PagesModule
+    ClarityModule,
+    PagesModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
