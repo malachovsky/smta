@@ -8,8 +8,7 @@ import {Routes} from '@angular/router';
 import {RouterModule} from '@angular/router';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full'
-  }
+  //{ path: '', redirectTo: '/', pathMatch: 'full'}
 ];
 
 @NgModule({

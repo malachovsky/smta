@@ -18,9 +18,11 @@ const pagesRoutes: Routes = [
   { path: 'kontakty', component: ContactsComponent },
   { path: 'documents', component: DocumentsComponent },
   { path: 'dokumenty', component: DocumentsComponent },
-  { path: 'home', component: HomeComponent },
+  // { path: '', component: HomeComponent },
   { path: 'league', component: LeagueComponent },
-  { path: 'liga', component: LeagueComponent }
+  { path: 'liga', component: LeagueComponent },
+
+  { path: '', redirectTo: 'o-smta', pathMatch: 'full'}
 ];
 
 @NgModule({
