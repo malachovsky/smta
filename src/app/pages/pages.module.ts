@@ -7,6 +7,7 @@ import { ClubsComponent } from './clubs/clubs.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { Season1Component } from './league/season1/season1.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { PagesRoutingModule } from './pages-routing.module';
     LeagueComponent,
     ClubsComponent,
     DocumentsComponent,
-    ContactsComponent
+    ContactsComponent,
+    Season1Component
   ]
 })
 export class PagesModule { }

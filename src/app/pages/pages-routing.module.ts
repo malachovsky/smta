@@ -8,6 +8,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { DocumentsComponent } from './documents/documents.component';
 import { HomeComponent } from './home/home.component';
 import { LeagueComponent } from './league/league.component';
+import { Season1Component } from './league/season1/season1.component';
 
 const pagesRoutes: Routes = [
   { path: 'about',  component: AboutComponent },
@@ -20,7 +21,8 @@ const pagesRoutes: Routes = [
   { path: 'dokumenty', component: DocumentsComponent },
   // { path: '', component: HomeComponent },
   { path: 'league', component: LeagueComponent },
-  { path: 'liga', component: LeagueComponent },
+  { path: 'liga/pravidla', component: LeagueComponent },
+  { path: 'liga/sezona-2017-18', component: Season1Component },
 
   { path: '', redirectTo: 'o-smta', pathMatch: 'full'}
 ];

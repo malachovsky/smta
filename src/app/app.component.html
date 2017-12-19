@@ -16,11 +16,21 @@
   <div class="header-nav">
     <!--<a routerLink="/" class="nav-link nav-text">Úvod</a>-->
     <a routerLink="/o-smta" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">O SMTA</a>
-    <a routerLink="/liga" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">Liga</a>
+    <a routerLink="/liga/pravidla" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">Liga</a>
     <a routerLink="/kluby" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">Kluby</a>
     <a routerLink="/kontakty" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }" class="nav-link nav-text">Kontakt</a>
   </div>
 </header>
+<nav class="subnav" *ngIf="router.url.startsWith('/liga')">
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/liga/pravidla" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }">Pravidlá</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/liga/sezona-2017-18" routerLinkActive="active" routerLinkActiveOptions="{ exact: true }">Sezóna 2017/18</a>
+    </li>
+  </ul>
+</nav>
 <div id="content">
   <router-outlet></router-outlet>
 </div>
